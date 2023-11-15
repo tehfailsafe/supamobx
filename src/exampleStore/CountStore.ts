@@ -1,8 +1,7 @@
 import { supabase } from "../supabase";
-import { SupabaseStore } from "./SupaStore";
+import { SupaStore } from "../supamobx/SupaStore";
 
-// export const countStore = new SupabaseStore(supabase, "count");
-class CountStore extends SupabaseStore {
+class CountStore extends SupaStore {
   constructor() {
     super(supabase, "count");
   }

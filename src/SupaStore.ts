@@ -1,7 +1,7 @@
 import { action, makeObservable, observable } from "mobx";
 import { SupabaseClient } from "@supabase/supabase-js";
 
-export class SupabaseStore {
+export class SupaStore {
   public rows: any[] = [];
   private table: string = "";
   private supabase: SupabaseClient<any, "public", any>;
